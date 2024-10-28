@@ -1,12 +1,14 @@
-.container {
+   .holder {
             display: flex;
-            flex-wrap: wrap; /
-            justify-content: space-around; 
+            flex-wrap: wrap; /* Allows items to wrap onto the next row */
+            justify-content: space-between; /* Spaces items with the first and last touching screen edges */
+            gap: 10px; /* Adds consistent spacing between items */
+            padding: 0 10px; /* Adds padding on the left and right sides */
         }
 
         .item {
-            width: 50px;
-            height: 50px;
+            width: 100px; /* Set a fixed width for each item */
+            height: 100px; /* Set a fixed height for each item */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -19,4 +21,3 @@
         .item-1 { background-color: red; }
         .item-2 { background-color: blue; }
         .item-3 { background-color: green; }
-        /* Add more items as needed */
